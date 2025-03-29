@@ -45,26 +45,13 @@ body {
   color: #000000;
 }
 .logo {
-  width: 135px;
+  width: 250px;
 }
 .logo:nth-child(2) {
   position: absolute;
   width: 29px;
   top: 38px;
   left: 56.5px;
-}
-.logo2 {
-  animation: rotating 5s linear infinite;
-  -webkit-animation: rotating 5s linear infinite;
-}
-
-@-webkit-keyframes rotating {
-  from {
-    -webkit-transform: rotate(360deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-  }
 }
 .nav-child3 {
   justify-content: flex-end;
