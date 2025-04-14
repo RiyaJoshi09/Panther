@@ -9,12 +9,12 @@ const Footer = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_mrs2gmr",
-        "template_1atvw44",
-        form.current,
-        "2vAafyWokU5vCYmE9"
-      )
+    .sendForm(
+      "service_dk06bp6",
+      "template_ihtoibm",
+      form.current,
+      "YFrqLZMZl2eqZXOtx"
+    )
       .then(
         (result) => {
           console.log(result.text);
