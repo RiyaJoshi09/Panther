@@ -1,16 +1,24 @@
 import React from "react";
 import "./Contact.css";
+import contactbg from "../assets/Contactbg.jpg";
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+    <div className="contact-page" style={{ backgroundImage: `url(${contactbg})` }}>
+      <div className="overlay">
+        <div className="contact-container">
+          <h1>Get in Touch</h1>
+          <p>Have questions or want to book a custom Panther experience? Reach out to us.</p>
+
+          <form className="contact-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };
