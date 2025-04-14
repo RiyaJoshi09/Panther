@@ -1,0 +1,74 @@
+.enquiry-page {
+    min-height: 75vh;
+    background: url("../assets/enquirybg.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.enquiry-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.enquiry-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.enquiry-container p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.enquiry-form button {
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enquiry-form button:hover {
+    background-color: #333;
+}
+
+.thank-you {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.thank-you h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.thank-you p {
+    font-size: 1.1rem;
+    color: #555;
+}  
