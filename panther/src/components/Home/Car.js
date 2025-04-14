@@ -1,4 +1,3 @@
-import Client from "./Clients";
 import Step from "./Step";
 import ChooseUs from "./ChooseUs";
 import Testimonial from "./Testimonial";
@@ -20,7 +19,6 @@ const Car = (props) => {
       </div>
 
       {/* Removed <Book /> */}
-      <Client />
       <Step />
       <ChooseUs />
       <Testimonial />

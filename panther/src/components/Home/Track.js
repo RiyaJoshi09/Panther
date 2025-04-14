@@ -1,4 +1,3 @@
-import Client from "./Clients";
 import Step from "./Step";
 import ChooseUs from "./ChooseUs";
 import Testimonial from "./Testimonial";
@@ -21,7 +20,6 @@ const Truck = (props) => {
       </div>
   
 
-      <Client />
       <Step />
       <ChooseUs />
       <Testimonial />
