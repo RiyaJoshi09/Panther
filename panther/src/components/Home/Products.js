@@ -184,7 +184,7 @@ const Products = () => {
                 }}
                 className={`tab-btns ${clickedTabs.A ? "tab-clicked" : ""}`}
               >
-                <p>Cars</p>
+                <p>Aston Martin</p>
               </div>
               <div
                 onClick={() => {
@@ -192,7 +192,7 @@ const Products = () => {
                 }}
                 className={`tab-btns ${clickedTabs.B ? "tab-clicked" : ""}`}
               >
-                <p>SUV/MUV</p>
+                <p>Mercedes</p>
               </div>
               <div
                 onClick={() => {
@@ -200,7 +200,7 @@ const Products = () => {
                 }}
                 className={`tab-btns ${clickedTabs.C ? "tab-clicked" : ""}`}
               >
-                <p>Tracks</p>
+                <p>RollsRoyce</p>
               </div>
               <div
                 onClick={() => {
@@ -208,7 +208,7 @@ const Products = () => {
                 }}
                 className={`tab-btns ${clickedTabs.D ? "tab-clicked" : ""}`}
               >
-                <p>Vans</p>
+                <p>BMW</p>
               </div>
             </div>
             <Car clickState={clickedTabs.A} />

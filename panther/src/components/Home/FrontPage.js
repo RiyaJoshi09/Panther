@@ -12,7 +12,7 @@ const FrontPage = () => {
         </h1>
 
         <button className="view">
-          <Link to="/brands">View Cars</Link>
+          <Link to="/brands">View Brands</Link>
         </button>
       </div>
       <div className="front-child2">
