@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Enquiry.css";
+import Header from "./Header";
 
 const Enquiry = () => {
   const [submitted, setSubmitted] = useState(false);

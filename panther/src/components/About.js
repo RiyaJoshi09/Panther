@@ -4,6 +4,7 @@ import heroImage from "../assets/panther-hero1.jpg";
 import conceptCar from "../assets/concept1.jpg";
 import factoryImage from "../assets/factory.jpg";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 const About = () => {
   return (
