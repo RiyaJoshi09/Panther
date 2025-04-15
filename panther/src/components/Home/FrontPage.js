@@ -7,8 +7,8 @@ const FrontPage = () => {
       <img className="back" src="back_n.png" alt="" />
       <div className="front-child1">
         <h1>
-          <span className="nova"> Panther:</span>
-          The benchmark, never the competition
+          <span className="nova"> Panther: </span>
+          Built to lead, never follow
         </h1>
 
         <button className="view">

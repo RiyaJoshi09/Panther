@@ -18,7 +18,6 @@ const Car = (props) => {
         {/* ...[your car listing blocks here]... */}
       </div>
 
-      {/* Removed <Book /> */}
       <Step />
       <ChooseUs />
       <Testimonial />

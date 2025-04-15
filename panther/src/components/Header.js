@@ -14,7 +14,7 @@ const Header = () => {
       <div className="container-fluid nav-cont">
         <div className="nav-child1">
           <Link className="navbar-brand" to="/">
-            <img className="logo logo1" src="Logo.png" alt="" />
+            <img className="logo logo1" src="Logo11.png" alt="" />
           </Link>
         </div>
 
