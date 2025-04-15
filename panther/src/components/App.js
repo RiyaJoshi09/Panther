@@ -1,7 +1,8 @@
 import Home from "./Home";
-import Vehicles from "./Vehicles";
+import BrandPage from "./BrandPage";
 import About from "./About";
 import Contact from "./Contact";
+import Enquiry from "./Enquiry";
 import { MyProvider } from "../context/MyContext";
 import { Route, Routes } from "react-router-dom";
 import { StyledEngineProvider } from "@mui/material/styles";
@@ -24,9 +25,10 @@ function App() {
     <StyledEngineProvider injectFirst>
       <MyProvider>
         <Routes>
+          <Route path="/enquiry" element={<Enquiry />}></Route>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/vehicles" element={<Vehicles />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/brands" element={<BrandPage />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </MyProvider>

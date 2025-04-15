@@ -1,0 +1,15 @@
+{
+  "name": "panther",
+  "version": "1.0.0",
+  "description": "## 🚗 Introduction Panther is a sleek and modern **e-commerce website** for a luxury car brand. Built using **React**, this project delivers an immersive browsing experience, allowing users to explore and purchase high-end cars with ease.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-router-dom": "^7.5.0"
+  }
+}

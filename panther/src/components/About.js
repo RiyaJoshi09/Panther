@@ -60,7 +60,7 @@ const About = () => {
       {/* Call to Action */}
       <section className="cta">
         <h2>Ready to ride with Panther?</h2>
-        <Link to="/cars" className="px-6 py-3 text-white bg-black rounded-lg hover:bg-gray-800"><button className="cta-btn">Explore our Cars</button></Link>
+        <Link to="/brands" className="px-6 py-3 text-white bg-black rounded-lg hover:bg-gray-800"><button className="cta-btn">Explore our Cars</button></Link>
       </section>
     </div>
     <Footer />
