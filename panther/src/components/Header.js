@@ -76,20 +76,18 @@ const Header = () => {
               <li className="li li3">
                 <Link to="/about">About</Link>
               </li>
-              <li className="li li4">
-                <a href="#testimonials">Testimonials</a>
-              </li>
               <li className="li li5">
                 <Link to="/contact">Contact</Link>
               </li>
               <li className="li">
-                <button className="sign">Sign up &gt;</button>
+              <Link to="/singup"><button className="sign">Sign up &gt;</button></Link>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="nav-child3">
+        <Link to="/signup">
           <Button
             variant="outlined"
             sx={{
@@ -106,9 +104,9 @@ const Header = () => {
                 border: "2px solid #222a2f",
               },
             }}
-          >
-            Sign Up
+          >Sign up
           </Button>
+          </Link>
          {/* <div>
             <i className="fa-regular fa-circle-user account"></i>
             <i class="fa-solid fa-angle-up"></i>
