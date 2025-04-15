@@ -10,6 +10,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Header from "./Header";
+import Login from "./Login";
+import Register from "./Register";
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/brands" element={<BrandPage />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/signup" element={<Login />}></Route>
+          <Route path="/register" element={<Register />}></Route>
         </Routes>
       </MyProvider>
     </StyledEngineProvider>
