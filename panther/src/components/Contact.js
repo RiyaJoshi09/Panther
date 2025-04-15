@@ -1,10 +1,11 @@
 import React from "react";
 import "../styles/Contact.css";
 import contactbg from "../assets/Contactbg.jpg";
-import Header from "./Header";
+import Footer from "./Footer";
 
 const Contact = () => {
   return (
+    <>
     <div className="contact-page" style={{ backgroundImage: `url(${contactbg})` }}>
       <div className="overlay">
         <div className="contact-container">
@@ -21,6 +22,8 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

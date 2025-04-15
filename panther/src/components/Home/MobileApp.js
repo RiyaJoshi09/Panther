@@ -1,6 +1,6 @@
 const MobileApp = () => {
   return (
-    <div className="mobile">
+    <div className="mobile" style={{ marginBottom: "15rem" }}>
       <div className="down-grid-cont">
         <div className="download-cont">
           <h1>Download The Free Panther App</h1>

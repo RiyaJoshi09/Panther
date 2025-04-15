@@ -4,10 +4,11 @@ import heroImage from "../assets/panther-hero1.jpg";
 import conceptCar from "../assets/concept1.jpg";
 import factoryImage from "../assets/factory.jpg";
 import { Link } from "react-router-dom";
-import Header from "./Header";
+import Footer from "./Footer";
 
 const About = () => {
   return (
+    <>
     <div className="about-page">
       {/* Hero Section */}
       <section className="hero">
@@ -62,7 +63,9 @@ const About = () => {
         <Link to="/cars" className="px-6 py-3 text-white bg-black rounded-lg hover:bg-gray-800"><button className="cta-btn">Explore our Cars</button></Link>
       </section>
     </div>
-  );
+    <Footer />
+    </>
+    );
 };
 
 export default About;

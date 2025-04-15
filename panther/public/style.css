@@ -7,6 +7,8 @@ body {
   margin: 0;
   background-color: #f0f0f0;
   font-family: "Montserrat", sans-serif;
+  padding-top: 80px;
+  
 }
 ::-webkit-scrollbar-thumb {
   background-color: #3d3b3e;
@@ -1609,7 +1611,7 @@ ul {
 .footer {
   display: grid;
   grid-auto-flow: column;
-  margin-top: 15rem;
+  margin-top: 0px;
   gap: 3rem;
   position: absolute;
   width: 103%;

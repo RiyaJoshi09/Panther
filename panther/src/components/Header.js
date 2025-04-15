@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
+import "../styles/Header.css";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);

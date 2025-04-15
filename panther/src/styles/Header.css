@@ -1,0 +1,70 @@
+.navbar {
+    background-color: #ffffff; /* Solid black */
+    padding: 1rem 2rem;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Ensure page content starts after navbar */
+  body {
+    padding-top: 80px; /* Adjust based on navbar height */
+  }
+  
+  /* Logo sizing */
+  .navbar-brand img.logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  /* Navigation links */
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f0c040; /* Accent color on hover */
+  }
+  
+  /* Hamburger icon styles for mobile */
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+  }
+  
+  /* Button styling */
+  .sign {
+    background-color: #f0c040;
+    color: #000;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .sign:hover {
+    background-color: #d4a937;
+  }
+  
+  /* Mobile nav styling if applicable */
+  #nav.show {
+    background-color: #000;
+    padding: 1rem;
+  }
+  
+  /* Adjust spacing and responsiveness */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  }
+  
