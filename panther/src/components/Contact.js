@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Contact.css";
 import contactbg from "../assets/Contactbg.jpg";
+import Header from "./Header";
 
 const Contact = () => {
   return (
