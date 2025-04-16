@@ -3,6 +3,7 @@ import BrandPage from "./BrandPage";
 import About from "./About";
 import Contact from "./Contact";
 import Enquiry from "./Enquiry";
+import CarsPage from "./CarsPage";
 import { MyProvider } from "../context/MyContext";
 import { Route, Routes } from "react-router-dom";
 import { StyledEngineProvider } from "@mui/material/styles";
@@ -30,7 +31,8 @@ function App() {
           <Route path="/enquiry" element={<Enquiry />}></Route>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/brands" element={<BrandPage />}></Route>
+          <Route path="/brands" element={<BrandPage />}>
+          </Route><Route path="/cars/:brand" element={<CarsPage />} /> {/* ← dynamic route */}
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/signup" element={<Login />}></Route>
           <Route path="/register" element={<Register />}></Route>
