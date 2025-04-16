@@ -6,7 +6,6 @@ const Enquiry = () => {
   const location = useLocation();
   const [submitted, setSubmitted] = useState(false);
   const [selectedModel, setSelectedModel] = useState('');
-  const carModels = ["Panther X1", "Panther Shadow", "Panther GT", "Panther Velocity"];
 
   useEffect(() => {
     if (location.state && location.state.carName) {
