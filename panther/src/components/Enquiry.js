@@ -5,17 +5,17 @@ import { useLocation } from 'react-router-dom';
 const Enquiry = () => {
   const location = useLocation();
   const [submitted, setSubmitted] = useState(false);
-  const [selectedModel, setSelectedModel] = useState('');
+  const [carModel, setCarModel] = useState('');
 
   useEffect(() => {
     if (location.state && location.state.carName) {
-      setSelectedModel(location.state.carName);
+      setCarModel(location.state.carName);
     }
   }, [location]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    alert(`Enquiry submitted for ${carModel}`);
   };
 
   return (
