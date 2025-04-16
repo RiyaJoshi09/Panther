@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Car from "./Car";
 import Suv from "./Suv";
@@ -6,8 +6,6 @@ import Van from "./Van";
 import Truck from "./Track";
 import Reserve from "./Reserve";
 import { MyContext } from "../../context/MyContext";
-import { useState } from "react";
-
 
 const Products = () => {
   const navigate = useNavigate();
@@ -20,13 +18,14 @@ const Products = () => {
     D: false,
   });
 
-  const handleClick = (tab) => {
+  const handleClick = (tab, route) => {
     setClickedTabs({
       A: tab === "A",
       B: tab === "B",
       C: tab === "C",
       D: tab === "D",
     });
+    navigate(route);
   };
 
   return (
@@ -108,21 +107,33 @@ const Products = () => {
 
           <div className="cars2-main">
             <div className="tab-btns-cont">
-              {["Aston Martin", "Mercedes", "RollsRoyce", "BMW"].map((brand, idx) => {
-                const key = ["A", "B", "C", "D"][idx];
-                return (
-                  <div
-                    key={key}
-                    onClick={() => handleClick(key)}
-                    className={`tab-btns ${clickedTabs[key] ? "tab-clicked" : ""}`}
-                  >
-                    <p>{brand}</p>
-                  </div>
-                );
-              })}
+              <div
+                onClick={() => handleClick("A", "/aston-martin")}
+                className={`tab-btns ${clickedTabs.A ? "tab-clicked" : ""}`}
+              >
+                <p>Aston Martin</p>
+              </div>
+              <div
+                onClick={() => handleClick("B", "/mercedes")}
+                className={`tab-btns ${clickedTabs.B ? "tab-clicked" : ""}`}
+              >
+                <p>Mercedes</p>
+              </div>
+              <div
+                onClick={() => handleClick("C", "/rolls-royce")}
+                className={`tab-btns ${clickedTabs.C ? "tab-clicked" : ""}`}
+              >
+                <p>Rolls Royce</p>
+              </div>
+              <div
+                onClick={() => handleClick("D", "/bmw")}
+                className={`tab-btns ${clickedTabs.D ? "tab-clicked" : ""}`}
+              >
+                <p>BMW</p>
+              </div>
             </div>
 
-            {/* Car Tabs */}
+            {/* Optional: These can still render or be removed */}
             <Car clickState={clickedTabs.A} />
             <Suv clickState={clickedTabs.B} />
             <Truck clickState={clickedTabs.C} />
