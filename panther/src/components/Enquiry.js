@@ -1,13 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Enquiry.css";
+import { useLocation } from 'react-router-dom';
 
 const Enquiry = () => {
+  const location = useLocation();
   const [submitted, setSubmitted] = useState(false);
+  const [selectedModel, setSelectedModel] = useState('');
   const carModels = ["Panther X1", "Panther Shadow", "Panther GT", "Panther Velocity"];
+
+  useEffect(() => {
+    if (location.state && location.state.carName) {
+      setSelectedModel(location.state.carName);
+    }
+  }, [location]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle submission logic (send to email or backend)
     setSubmitted(true);
   };
 
@@ -27,14 +35,27 @@ const Enquiry = () => {
               <input type="text" placeholder="Full Name" required />
               <input type="email" placeholder="Email Address" required />
               <input type="tel" placeholder="Phone Number" />
-              <select required>
+              
+              <select
+                value={selectedModel}
+                onChange={(e) => setSelectedModel(e.target.value)}
+                required
+                disabled={!!location.state?.carName}
+              >
                 <option value="">Select a Car Model</option>
                 {carModels.map((model) => (
-                  <option key={model} value={model}>{model}</option>
+                  <option key={model} value={model}>
+                    {model}
+                  </option>
                 ))}
               </select>
+
               <input type="text" placeholder="Preferred Contact Time" />
-              <textarea placeholder="Your Message or Enquiry Details" rows="5" required></textarea>
+              <textarea
+                placeholder="Your Message or Enquiry Details"
+                rows="5"
+                required
+              ></textarea>
               <button type="submit">Submit Enquiry</button>
             </form>
           </>
