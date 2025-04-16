@@ -1,14 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Enquiry.css";
+import { useLocation } from 'react-router-dom';
 
 const Enquiry = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const carModels = ["Panther X1", "Panther Shadow", "Panther GT", "Panther Velocity"];
+  const location = useLocation();
+  const [submitted] = useState(false);
+  const [carModel, setCarModel] = useState('');
+
+  useEffect(() => {
+    if (location.state && location.state.carName) {
+      setCarModel(location.state.carName);
+    }
+  }, [location]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle submission logic (send to email or backend)
-    setSubmitted(true);
+    alert(`Enquiry submitted for ${carModel}`);
   };
 
   return (
@@ -27,14 +34,21 @@ const Enquiry = () => {
               <input type="text" placeholder="Full Name" required />
               <input type="email" placeholder="Email Address" required />
               <input type="tel" placeholder="Phone Number" />
-              <select required>
-                <option value="">Select a Car Model</option>
-                {carModels.map((model) => (
-                  <option key={model} value={model}>{model}</option>
-                ))}
-              </select>
+              
+              <input
+                type="text"
+                value={carModel}
+                onChange={(e) => setCarModel(e.target.value)}
+                placeholder="Car Model"
+                required
+              />
+
               <input type="text" placeholder="Preferred Contact Time" />
-              <textarea placeholder="Your Message or Enquiry Details" rows="5" required></textarea>
+              <textarea
+                placeholder="Your Message or Enquiry Details"
+                rows="5"
+                required
+              ></textarea>
               <button type="submit">Submit Enquiry</button>
             </form>
           </>

@@ -360,8 +360,7 @@ body {
             text-transform: uppercase;
             letter-spacing: 1.7px;
             cursor: pointer;
-            &:before {
-            }
+           
           }
         }
       }
