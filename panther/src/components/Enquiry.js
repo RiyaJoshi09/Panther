@@ -35,19 +35,13 @@ const Enquiry = () => {
               <input type="email" placeholder="Email Address" required />
               <input type="tel" placeholder="Phone Number" />
               
-              <select
-                value={selectedModel}
-                onChange={(e) => setSelectedModel(e.target.value)}
+              <input
+                type="text"
+                value={carModel}
+                onChange={(e) => setCarModel(e.target.value)}
+                placeholder="Car Model"
                 required
-                disabled={!!location.state?.carName}
-              >
-                <option value="">Select a Car Model</option>
-                {carModels.map((model) => (
-                  <option key={model} value={model}>
-                    {model}
-                  </option>
-                ))}
-              </select>
+              />
 
               <input type="text" placeholder="Preferred Contact Time" />
               <textarea
