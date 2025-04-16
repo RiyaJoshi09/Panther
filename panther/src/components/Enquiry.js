@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 const Enquiry = () => {
   const location = useLocation();
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted] = useState(false);
   const [carModel, setCarModel] = useState('');
 
   useEffect(() => {

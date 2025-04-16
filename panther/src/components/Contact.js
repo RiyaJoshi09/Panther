@@ -13,10 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_dk06bp6", // Your EmailJS service ID
-        "template_ihtoibm", // Your EmailJS template ID
+        "service_dk06bp6", 
+        "template_ihtoibm", 
         form.current,
-        "YFrqLZMZl2eqZXOtx" // Your EmailJS public key
+        "YFrqLZMZl2eqZXOtx" 
       )
       .then(
         (result) => {
